@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap">
+    <style>
+        body {
+            background-color: rgb(250, 221, 227);
+            box-sizing: border-box;
+        }
+
+        .img {
+            float: left;
+            width: 40%;
+            position: relative;
+            bottom: 30%;
+            top: 32px;
+            left: 253px;
+            display: inline;
+            overflow: clip;
+        }
+
+        .container {
+            background-color: white;
+            border: 2px solid rgb(252, 248, 248);
+            border-radius: 0px 20px 20px 0px;
+            float: right;
+            width: 25%;
+            text-align: left;
+            position: relative;
+            top: 14px;
+            right: 256px;
+            margin: 20px 14px;
+            padding: 59px 35px;
+            color: rgb(7, 7, 114);
+            font-family: "Arimo", sans-serif;
+            font-weight: bold;
+        }
+
+        .in-form {
+            width: 300px;
+            font-size: 17px;
+            margin: 6px 0px 20px 0px;
+            padding: 10px 10px;
+            text-align: left;
+            border: 2px solid rgb(239 177 177);
+            border-radius: 9px;
+            font-family: "Arimo", sans-serif;
+            color: rgb(10, 10, 121);
+            font-weight: bolder;
+        }
+
+        .container h2 {
+            text-align: left;
+        }
+
+        .container button {
+            display: inline;
+            width: 40%;
+        }
+
+        .btn1 {
+            padding: 9px 10px;
+            color: rgb(7, 7, 144);
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: "Arimo", sans-serif;
+            font-weight: lighter;
+        }
+
+        .btn2 {
+            padding: 9px 10px;
+            margin-left: 54px;
+            color: rgb(7, 7, 144);
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: "Arimo", sans-serif;
+            font-weight: lighter;
+        }
+
+        .btn1:hover,
+        .btn2:hover {
+            background-color: rgb(243, 193, 68);
+
+        }
+
+        .data {
+            border: none;
+        }
+
+        .continue {
+            text-align: center;
+            position: relative;
+            right: 5px;
+            color: black;
+            font-weight: lighter;
+        }
+
+        .icon {
+            margin: 15px;
+            margin-left: 80px;
+            font-size: 30px;
+            display: inline;
+            color: rgb(248, 186, 196);
+        }
+
+        .icon2 {
+            margin: 0px 15px;
+            font-size: 30px;
+            display: inline;
+            color: rgb(248, 186, 196);
+        }
+
+        .icon3 {
+            margin: 0px 15px;
+            font-size: 30px;
+            display: inline;
+            color: rgb(248, 186, 196);
+        }
+
+        .policy {
+            font-size: 12px;
+            margin-right: 45px;
+            font-weight: lighter;
+            color: rgb(19, 19, 122);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <img style="border-radius: 20px 0 0 20px; border: 1px solid rgb(255,212,220);" src="project.jpg.png" alt="image"
+            height="619px" width="400px">
+    </div>
+    <div class="container">
+        <h2>Get started</h2>
+        <form action="">
+            <label for="name">Name</label>
+            <div class="in-form">
+                <input class="data" type="text" name="" placeholder="Name">
+            </div>
+            <label for="name">Email</label>
+            <div class="in-form">
+                <input class="data" type="text" name="" placeholder="Email">
+            </div>
+            <label for="name">Password</label>
+            <div class="in-form">
+                <input class="data" type="text" name="" placeholder="******">
+            </div>
+            <div>
+                <button class="btn1">Sign Up</button>
+                <button class="btn2"> <a  style="text-decoration: none;" href="login.html">Sign In</a></button>
+            </div>
+            <div class="continue">
+                <p>or continue with</p>
+            </div>
+            <div class="icon">
+                <a href="https://vk.com"></a>
+                <i class="fa-brands fa-vk"></i>
+            </div>
+            <div class="icon2">
+                <a href="https://google.com"></a>
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="icon3">
+                <a href="https://facebook.com"></a>
+                <i class="fa-brands fa-square-facebook"></i>
+            </div>
+            <br>
+            <br>
+            <div class="policy">
+                <input type="checkbox" name="accept-policies" id="accept-policies"
+                    value="I agree to the terms of service and privacy policy" required>
+                <label for="accept-policies">I agree to the</label>
+                <!--tos:some kind of standard terms of service filename-->
+                <a style="text-decoration: none;" href="/tos" class="strong">
+                    Terms of Service</a>
+                and
+                <a style="text-decoration: none;" href="/privacy" class="strong">
+                    Privacy policy
+                </a>
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>

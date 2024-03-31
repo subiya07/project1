@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="img">
+        <img style="border-radius: 20px 0 0 20px; border: 3px solid rgb(253, 234, 238);" src="login.jpg" alt="img"
+            width="550px" height="619px">
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="box-login" id="login">
+                <div class="top-header">
+                    <h2>LOGIN</h2>
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <!--- Required:that specifies input field be filled before submitting form-->
+                        <input type="text" class="input-box" id="Username" required>
+                        <label for="Username">Username</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="input-box" id="Password" required>
+                        <label for="Password">Password</label>
+                        <div class="eye-area">
+                            <!---onclick:event handler that instructs the browser to run a script when visitor click button-->
+                            <div class="eye-box" onclick="myPassword()">
+                                <i class="fa-regular fa-eye" id="eye"></i>
+                                <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" id="formcheck" class="check">
+                        <label for="formcheck">Remember Me</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" class="input-submit" value="Login Now">
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="continue">
+                        <p>-------------Or Continue with------------</p>
+                    </div>
+                    <div class="icon">
+                        <a href="https://login.facebook.com"></a>
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </div>
+                    <div class="icon2">
+                        <a href="https://login.linked.com"></a>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="icon3">
+                        <a href="https://login.instagram.com"></a>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div> <br> <br>
+                    <div class="signup">
+                        <p>Don't have an account?<a href="index.html"> Create One</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Script:tag is used to embed a client side script (javascript)-->
+    <!---Function: contains some code that will be executed by an event or call to that function-->
+    <!--Var:the inner html property or the getelementbyid()method-->
+    <!--document:return elements objects representing the elements whose id property matches the specified string-->
+    <!--if/else:use if to specify a block of code to be executed if specify condition is true-->
+    <script>
+        function myPassword() {
+
+            var a = document.getElementById('Password');
+            var b = document.getElementById('eye');
+            var c = document.getElementById('eye-slash');
+            if (a.type === "password") {
+                a.type = "text"
+                b.style.opacity = "0";
+                c.style.opacity = "1";
+
+            } else {
+                a.type = "password"
+                b.style.opacity = "1";
+                c.style.opacity = "0";
+            }
+        }
+    </script>
+</body>
+
+</html>
